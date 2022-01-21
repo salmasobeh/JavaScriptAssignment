@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+</head>
+
+
+<body>
+    <h2>JavaScript</h2>
+
+
+    <script>
+        //A year is a leap year if the year is a multiple of 400
+        // or the year is a multiple of 4 and not a multiple of 100.
+        ///Leap Year Checker ///
+        function LeapYearChecker(year) {
+            if ((year % 400 == 0) || (year % 4 == 0) && (year % 100 != 0)) {
+                alert(year + " is a leap year. ")
+            } else {
+                alert(year + " is not a leap year.")
+            }
+        }
+        var y = prompt("Enter a year to check if its leap or not: ")
+        LeapYearChecker(y)
+    </script>
+
+
+</body>
+
+</html>
