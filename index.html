@@ -59,6 +59,29 @@
         console.log(unique_element)
 
         /// Get the 2nd maximum in an array of integers/////
+
+        function GetSecondMaxNumber(arr) {
+
+
+            for (var i = 0; i < arr.length; i++) {
+                var j
+                for (j = i + 1; j < arr.length; j++) {
+                    var temp = 0
+                    if (arr[i] > arr[j]) {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+
+
+        }
+        var array = [10, 20, 67, 65, 96, 57]
+        GetSecondMaxNumber(array)
+
+        var second_maximum_number = array[array.length - 2]
+        console.log("Second maximum in the array: " + second_maximum_number);
     </script>
 
 
