@@ -33,6 +33,32 @@
         var w = prompt("Enter your weight:")
         var h = prompt("Enter your height:")
         BMICalculator(w, h)
+
+
+
+        //Get the non - repeated element in the array ////
+
+        function NonRepeatedElement(array, length) {
+            for (var i = 0; i < length; i++) {
+                var j
+                for (j = 0; j < length; j++) {
+                    if (i != j && array[i] == array[j]) {
+                        break
+                    }
+                }
+                if (j == length)
+                    return array[i]
+
+            }
+            return -1
+
+        }
+        var list = ["Blue", "Green", "Yellow", "Blue", "Red", "Yellow", "Green"];
+        console.log(list)
+        var unique_element = NonRepeatedElement(list, list.length)
+        console.log(unique_element)
+
+        /// Get the 2nd maximum in an array of integers/////
     </script>
 
 
